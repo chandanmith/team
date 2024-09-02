@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\hp\Downloads\form\regestratio.css">
+    <script defer src="java.js"></script>
+</head>
+<body>
+    
+    <div class="sign-up-form">
+        <img src="C:\Users\hp\Downloads\form\Success-student-Logo-on-transparent-background-PNG-removebg-preview.png" height="65hv"></img>
+        <h1>Sign Up Now</h1>
+        <form>
+            <input type="email" class="input-box" placeholder="YourEmail" id="n1">
+            <input type="password" class="input-box" placeholder="Password" id="n2"><br><br>
+             <button type="button"class="signup-btn" onclick="return login1()"><a href="C:\Users\hp\Downloads\form\tushar.html">Login In</a></button><br><br>
+         <hr>
+         <p class="or">OR</p>
+         <p>Don't have account ?<br><br><button type="button"class="signup-in"><a href="login.html">Register</a></button></p>
+        </form>
+    
+    </div>
+<script>
+    function login1()
+    {
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n2").value;
+
+        if(a==""||b=="")
+        {
+            alert("Invalid username or password");
+            return false;
+        }
+        else
+        {
+          alert("Login Successfull");
+		  true;
+        }
+    }
+</script>
+</body>
+</html>

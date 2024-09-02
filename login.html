@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\hp\Downloads\form\login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<form action="http://localhost/project/back.php" method="post">
+    <div class="box">
+        <h1>Registration form</h1>
+        <div class="input">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="First Name" class="fname" id="n1" name="first-name" >
+        
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Last Name" class="lname" id="n2" name="last-name" >
+        </div>
+        <div class="input">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="email" placeholder="Email" class="inpt" id="n3" name="mail" >
+        </div>
+        <div class="input">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" class="inpt" id="n4" name="pass">
+        </div>
+        <div class="input">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            <input type="Date" placeholder="D.O.B" class="inpt" id="n5" name="dob">
+        </div>
+        <div class="gender">
+            <input type="radio" name="gender" id="n6" name="gender">Male
+            <input type="radio" name="gender" id="n7" name="gender">Female
+        </div>
+        <div class="input">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <input type="text" placeholder="City" class="inpt" id="n8" name="cit">
+        </div>
+        <button type="button" class="Register" onclick="return myform()"><a href="http://localhost/project/regestration.html">Register</a></button>
+    </div>
+</form>
+    <script>
+         function myform()
+         {
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            var c=document.getElementById("n3").value;
+            var d=document.getElementById("n4").value;
+            var e=document.getElementById("n5").value;
+            var f=document.getElementById("n6").value;
+            var g=document.getElementById("n7").value;
+            var h=document.getElementById("n8").value;
+
+            if(a==""||b==""||c==""||d==""||e==""||f==""||g==""||h=="")
+            {
+                alert("Please fill all the given fields");
+                return false;
+            }
+            else{
+                 true;
+            }
+           }
+    </script>
+</body>
+</html>
